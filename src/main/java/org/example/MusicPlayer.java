@@ -1,14 +1,40 @@
 package org.example;
 
+import java.util.List;
+
 public class MusicPlayer {
-    private Music music;
+    private List<Music> musics;
+
+    private String name;
+    private int volume;
 
     //IoC
-    public MusicPlayer(Music music) {
-        this.music = music;
+    public MusicPlayer() {
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getVolume() {
+        return volume;
+    }
+
+    public void setVolume(int volume) {
+        this.volume = volume;
+    }
+
+    public void setMusics(List<Music> musics) {
+        this.musics = musics;
     }
 
     public void playMusic() {
-        System.out.println("Playing: " + music.getSong());
+        for (Music music : musics) {
+            System.out.println(music.getSong());
+        }
     }
 }
