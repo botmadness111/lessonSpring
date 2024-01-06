@@ -9,7 +9,8 @@ import java.beans.ConstructorProperties;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
+@Component
+@Scope("prototype")
 public class ClassicalMusic implements Music{
 
     @PostConstruct
