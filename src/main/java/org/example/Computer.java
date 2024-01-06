@@ -3,17 +3,15 @@ package org.example;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-@Component
 public class Computer {
     private MusicPlayer musicPlayer;
 
-    @Autowired
     public Computer(MusicPlayer musicPlayer) {
         this.musicPlayer = musicPlayer;
     }
 
-    @Override
-    public String toString() {
-        return "into computer play " + musicPlayer.playMusic(TypeOfMusic.Rock);
+    public void playMusic(){
+        System.out.println("into computer play " + musicPlayer.getMusic());
     }
+
 }

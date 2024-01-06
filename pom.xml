@@ -40,6 +40,20 @@
             <version>6.1.2</version>
         </dependency>
 
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>jsr250-api</artifactId>
+            <version>1.0</version> <!-- Или 1.1, в зависимости от вашего проекта -->
+            <scope>provided</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>javax.annotation</groupId>
+            <artifactId>jsr250-api</artifactId>
+            <version>1.0</version>
+        </dependency>
+
     </dependencies>
     <build>
         <finalName>lessonSpring</finalName>
